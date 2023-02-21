@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="meyers.css">
+    <title>Sign-up-Form</title>
+</head>
+<body>
+    <main>
+        <div class="side-card">
+            <div class="card">
+                <img src="./downloads/odin-lined.png" alt="Odin Logo">
+                <h1>ODIN</h1>
+            </div>
+            <p>Photo by Hale West on Unsplash</p>
+        </div>
+        <div class="content">
+            <div class="ch">
+                <h1>This is an online form demo made with the intent to practice form-page building using HTML CSS and some JS.</h1>
+                <h1>Sign up, I know you want to.</h1>
+            </div>
+            <form action="#">
+                <div>
+                    <div class="first-name">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="first-name">
+                    </div>
+                    <div class="last-name">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name">
+                    </div>
+                </div>
+                <div>
+                    <div class="email">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="phone-number">
+                        <label for="phone-number">Phone Number</label>
+                        <input type="phone" name="phone-number" id="phone-number">
+                    </div>
+                </div>
+                <div>
+                    <div class="password">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password">
+                        <p class="password-alert">* Passwords Do Not Match</p>
+                    </div>
+                    <div class="confirm-password">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" name="confirm-password" id="confirm-password">
+                    </div>
+                </div>
+            </form>
+            <button type="submit">Create Account</button>
+            <p class="tag">Already have an account?
+                <a href="./index.html"> Log In</a>
+            </p>
+        </div>
+    </main>
+    <script src="./app.js"></script>
+</body>
+</html>
