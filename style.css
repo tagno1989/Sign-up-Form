@@ -109,7 +109,8 @@ a {
 
 /* form */
 
-form {
+/* form flex */
+/* form {
     width: 100%;
     background-color: white;
     display: flex;
@@ -118,21 +119,68 @@ form {
     box-shadow: 6px 6px 5px grey;
     
     
-}
+} */
 
-form > div {
+/* form > div {
     display: flex;
     justify-content: space-evenly;
     gap: 30px;
-}
+} */
 
-form > div > div {
+/* form > div > div {
     display: flex;
     flex-direction: column;
     gap: 5px;
     margin-top: 8px;
     font-size: .9em;
     
+}  */
+
+ /* form grid */
+
+form {
+    width: 100%;
+    background-color: white;
+    box-shadow: 6px 6px 5px grey;
+    display: grid;
+    overflow: auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    place-items: center;
+}
+
+div {
+    display: grid;
+}
+
+.first-name {
+   grid-column: 1/2;
+   grid-row: 1/2;
+   
+   
+}
+.last-name {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.email {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.phone-number {
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+}
+.password {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.confirm-password {
+    grid-column: 2/3;
+    grid-row: 3/4;
 }
 
 input {
